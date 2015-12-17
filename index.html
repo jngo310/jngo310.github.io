@@ -32,7 +32,7 @@ function myFunction() {
     $("#MyLink").click(function(event) {
         var cb = generate_callback($(this));
         event.preventDefault();
-        mixpanel.track("Clicked Link", { "Domain": "http://www.yelp.com/biz/haukohi-shave-ice-kihei" }, cb);
+        mixpanel.track("Clicked Link", { "Domain": "nytimes.com" }, cb);
         setTimeout(cb, 500);
     })
         
